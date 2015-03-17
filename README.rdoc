@@ -1,7 +1,6 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a webpage for my singer/songwriter alter ego.  From here, fans will be able to get updates about my music, gigs, and album releases, as well as purchase music and merch.
 
 Things you may want to cover:
 

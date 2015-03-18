@@ -43,3 +43,7 @@ group :development, :test do
   gem 'spring'
 end
 
+group :development, :test do
+	gem 'sqlite3'
+end
+

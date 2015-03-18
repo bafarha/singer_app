@@ -2,11 +2,19 @@
 <html>
 <head>
   <title>SingerPage</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="jumbotron">
+		<h1>Thanks for visiting my merch page</h1>
+		<h2>Here you can get your hands on my albums, tickets to my concerts, as well as great merch like T-shirts and stickers!</h2>
+	</div>
+
+	<img src="/images/uphill_climb_front_cover.jpg" alt="featureproduct">
 
 <%= yield %>
 

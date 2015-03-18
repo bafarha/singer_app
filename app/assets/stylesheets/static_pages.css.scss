@@ -2,11 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.jumbotron h1 {
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.jumbotron {
 	text-align: center;
 }
 
 .uphill_climb_cover {
-	width: 300px;
-	height: 300px;
+	width: 500px;
+	height: 500px;
+	margin: 100px;
+	background-image: url("../images/uphill_climb_front_cover.jpg");
+	background-size: cover;
 }

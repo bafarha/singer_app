@@ -310,7 +310,8 @@ border-bottom: 1px solid;
 	border: 2px solid black;
 	width: 200px;
 	height: 200px;
-	margin: 42px;
+	margin: 0 auto;
+	margin-bottom: 20px;	
 	display: inline-block;
 	position: relative;
 	background-size: cover;
@@ -318,7 +319,7 @@ border-bottom: 1px solid;
 }
 
 .image:hover{
-	border: 6px solid #fff;
+	transform: scale(1.1);
 }
 
 .info {
@@ -346,20 +347,20 @@ it is currently commented out in the HTML*/
 
 /* Video Section */
 .ghosting p {
-	background-image: url('../img/ghosting.jpg');
+	background-image: url('../images/ghosting.jpg');
 	background-size: cover;
 }
 
 .blackbird p {
-	background-image: url('../img/blackbird.jpg');
+	background-image: url('../images/blackbird.jpg');
 }
 
 .skinny-love p {
-	background-image: url('../img/skinny-love.jpg');
+	background-image: url('../images/skinny-love.jpg');
 }
 
 .dirty-tricks p {
-	background-image: url('../img/dirty-tricks.jpg');
+	background-image: url('../images/dirty-tricks.jpg');
 }
 
 #video-1 p {
@@ -369,7 +370,7 @@ it is currently commented out in the HTML*/
 }
 
 #video-1 p:hover {
-	border: 6px solid #fff;
+	transform: scale(1.1);
 } 
 
 section {
@@ -390,12 +391,16 @@ iframe {
 #video-page {
 	margin-bottom: 100px;
 }
+
+#video-1 {
+	max-height: 279px;
+}
 /* End of Video Section */
 
 /*Contact Section*/
 
 #contact-page {
-	background-image: url("../img/mountain2.jpg");
+	background-image: url("../images/Mountain2.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-color: #fff;
@@ -407,12 +412,12 @@ iframe {
 
 #contact-page .heading {
 	color: #fff;
-	width: 60%;
 	margin-left: 0px;
+	padding-bottom: 0px;
 }
 
 #contact-page #contacts p {
-	font-size: 2em;
+	font-size: 1em;
 	text-align: center;
 	color: #fff;
 }
@@ -435,23 +440,21 @@ iframe {
 	margin-top: 50px;
 	text-align: center;
 	color: #fff;
-	width: 60%;
 }
 
 #contact-page .social-media {
 	margin: 0px auto;
 	text-align: center;
 	margin-top: 50px;
-	width: 60%;
-}
-
-.contacts {
-	width: 60%;
 }
 
 .contacts h2 {
 	width: 100%;
 	margin: 0 auto;
+}
+
+#contacts {
+	margin-top: 50px;
 }
 
 .btn-default {
@@ -463,6 +466,7 @@ width: 121px;
 padding: 3px;
 border: 2px solid;
 min-width: 80px;
+margin-top: 10px;
 margin-right: 7px;
 text-transform: uppercase;
 font-family: 'Lato', sans-serif;
@@ -480,12 +484,12 @@ transition: all .25s ease-in-out;
 /*Contact Form Section*/
 
 #contact-form {
-	background-image: url("../img/hole2.jpg");
+	/*background-image: url("../img/hole2.jpg");*/
 	background-repeat: no-repeat;
 	padding-top: 30px;
 	padding-bottom: 15px;
-	margin-top: 100px;
 	min-height: 360px;
+	width: 60%;
 }
 
 #contact-form h1 {
@@ -498,6 +502,7 @@ transition: all .25s ease-in-out;
 	width: 100%;
 	margin-right: 30px;
 	min-width: 200px;
+	border-color: #000;
 }
 
 .form-group {
@@ -524,29 +529,53 @@ transition: all .25s ease-in-out;
 
 .comment-box {
 	margin-left: 15px;
+	min-width: 200px;
+	border-radius: 4px;
 }
 
 #text-area {
 	margin-right: 15px;
 }
+
+label {
+	margin-top: 20px;
+}
+
+.message-label {
+	margin-top: 0px;
+}
 /* End of Contact Form Section */
+
+/* Gigs Section */
+
+#gig-page .map {
+	width: cover;
+	height: 300px;
+	margin: 0px auto;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#gig-page .glyphicon {
+	margin-right: 10px;
+}
+
+#gig-page iframe {
+	padding: 0px;
+}
+/* End of Gigs Section */
+
 
 /*FAQ Section*/
 
-.faq {
-	text-align: center;
-	width: 70%;
-	margin: 0 auto;
-	text-align: center;
-	margin-bottom: -40px;
-	margin-top: 100px;
+#faq-page .heading {
+	padding-bottom: 10px;
 }
-
 	/* Accordeon */
 .panel-group {
 	margin: 0 auto;
 	width: 70%;
-	margin-top: 50px;
 	margin-bottom: 100px;
 }
 
@@ -578,6 +607,7 @@ transition: all .25s ease-in-out;
 
 .discography {
 	text-align: center;
+	padding-bottom: 10px;
 }
 
 .services {
@@ -690,11 +720,6 @@ label {
 	color: #fff;
 }
 
-.faq {
-	font-family: 'Abel', sans-serif;
-	font-size: 4em;
-}
-
 .panel-body {
 	font-family: 'Abel', sans-serif;
 	font-size: 1.3em;
@@ -711,8 +736,8 @@ label {
 }
 
 .discography {
-	font-family: 'Abel', sans-serif;
-	font-size: 4em;
+	font-family: 'Lato', sans-serif;
+	font-size: 5em;
 }
 
 th {
@@ -745,4 +770,31 @@ td {
 	font-family: 'Abel', sans-serif;
 }
 
+.gig-details {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.3em;
+}
+
+.gig-details .glyphicon {
+	font-size: 1.2em;
+}
+
 /* End of Typography */
+
+/* Media Queries */
+
+@media all and (max-width: 700px) {
+		#contact-page {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.gig-details {
+			font-size: 1.3em;
+			padding-left: 0px;
+		}
+
+		.gig-details .glyphicon {
+			font-size: 1em;
+		}
+}

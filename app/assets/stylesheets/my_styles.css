@@ -1,0 +1,800 @@
+* {box-sizing: border-box;}
+
+body {
+	position: relative;	
+}
+
+body h1 {
+	font-family: 'Lato', sans-serif;
+}
+
+/* Navbar Section */
+.container>.navbar-header {
+margin-right: 0;
+margin-left: 0;
+float: right;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+color: #000000;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #fff;
+	background-color: #000;
+	text-decoration: none;
+	transition: all .25s ease-in-out;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+border-color: #101010;
+float: right;
+}
+
+.navbar-toggle {
+	background-color: #000
+}
+
+.navbar {
+background-color: #fff;
+width: 100%;
+padding: 0px;
+position: fixed;
+z-index: 1;
+top:0px;
+border-bottom: 1px solid;
+}
+
+.blakefarha {
+	display: inline;
+}
+
+.navbar ul {
+	float: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	display: inline;
+}
+
+.navbar ul li {
+	display: inline;
+	color: #000;
+}
+
+.navbar p {
+	margin-left: 100px;
+	display: inline;
+}
+
+.navbar a {
+	padding: 12px;
+	color: #000;
+	font-size: 1.5em;
+	margin-left: 10px;
+	display: inline;
+	transition: color .5s;
+	transition: all .25s ease-in-out;
+}
+
+.navbar a {
+	-webkit-transition: color 600ms;
+}
+
+.navbar a:hover {
+	color: #fff;
+	background-color: #000;
+	text-decoration: none;
+	transition: all .25s ease-in-out;
+}
+
+.navbar ul li a {
+	color: #000;
+	padding: 15px;
+	font-size: 1.5em;
+	margin-left: 10px;
+}
+
+.buffer {
+	height: 51px;
+}
+
+/* End of NavBar Section */
+
+/* Carousel Section*/
+
+.carousel-caption {
+	right:20%;
+	left:20%;
+	padding-bottom: 100px;
+	z-index: 0;
+}
+
+.carousel-caption h3 {
+	font-size: 3em;
+	color: #C8102C;
+}
+
+.carousel-caption p {
+	font-size: 1.5em;
+	color: #fff;
+}
+
+#bike {
+	padding-left: 300px;
+	margin-right: -50px;
+	text-align: right
+}
+
+#road {
+	padding-left: 300px;
+	margin-right: -50px;
+	text-align: right
+}
+
+#book {
+	padding-left: 300px;
+	margin-right: -50px;
+	text-align: right
+}
+
+/* End of Carousel Section */
+
+/* About Section */
+
+#about-page {
+	background-color: #fff;
+	color: #000;
+}
+
+#about-page p {
+	color: #000;
+}
+
+#about-page h2 {
+	text-align: center;
+	color: #000;
+	padding: 0;
+}
+
+.smile {
+	margin-bottom: 50px;
+}
+
+.image-container img {
+	border-radius: 100%;
+	margin: 0 auto;
+	width: 600px;
+	height: auto;
+	margin-top: 101px;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.guitar {
+	margin-bottom: 100px;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.heading {
+	padding-bottom: 100px;
+	text-align: center;
+	margin: 0 auto;
+	color: #000;
+}
+
+.heading h1 {
+	margin-top: 100px;
+}
+
+.heading p {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-bottom: solid 1px;
+	border-top: solid 1px;
+}
+
+/* End of About Section */
+
+/* Music Section */
+
+.row {
+	color: #000;
+}
+
+.row p {
+	font-size: 1.5em;
+}
+
+.row h2 {
+	font-size: 3em;
+}
+
+.row h1 {
+	font-size: 5em;
+}
+
+.col-md-4  h2 {
+	color:#000;
+	border-bottom: solid 1px #000;
+}
+
+#albums h1 {
+	border-bottom: solid 1px;
+	border-top: solid 1px;
+}
+
+#album-art h2 {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#album-art h4 {
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Abel', sans-serif;
+	margin-bottom: 40px;
+}
+
+
+#album-art p {
+	border: 1px solid #000;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+#album-art a {
+	color: #000;
+}
+
+#things-i-left-behind p {
+	background-image: url("../img/behind.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .25s ease-in-out;
+}
+
+#the-uphill-climb p {
+	background-image: url("../img/uphill.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .25s ease-in-out;
+}
+
+#korean-fruit p {
+	background-image: url("../img/fruit.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .25s ease-in-out;
+}
+
+#just-a-few-tunes p {
+	background-image: url("../img/tunes.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .25s ease-in-out;
+}
+
+#things-i-left-behind p:hover {
+	border: 6px solid #fff;
+}
+
+#the-uphill-climb p:hover {
+	border: 6px solid #fff;
+}
+
+#korean-fruit p:hover {
+	border: 6px solid #fff;
+}
+
+#just-a-few-tunes p:hover {
+	border: 6px solid #fff;
+}
+
+.image {
+	box-sizing: border-box;
+	border: 2px solid black;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-bottom: 20px;	
+	display: inline-block;
+	position: relative;
+	background-size: cover;
+	transition: .25s ease-in-out;
+}
+
+.image:hover{
+	transform: scale(1.1);
+}
+
+.info {
+	display: inline-block;
+	color: #fff;
+	font-family: 'Abel', sans-serif;
+	line-height: 1.6;
+	position: absolute;
+	top: 35%;
+	left: -3px;
+	font-size: 1.4em;
+	text-align: center;
+	width: 200px;
+}
+
+.proj-title {
+	font-weight: 100;
+}
+
+/* End of Music Section */
+
+/* #video_1 is used for second concept of displaying videos.  
+I've decided not to use this for now, and 
+it is currently commented out in the HTML*/
+
+/* Video Section */
+.ghosting p {
+	background-image: url('../images/ghosting.jpg');
+	background-size: cover;
+}
+
+.blackbird p {
+	background-image: url('../images/blackbird.jpg');
+}
+
+.skinny-love p {
+	background-image: url('../images/skinny-love.jpg');
+}
+
+.dirty-tricks p {
+	background-image: url('../images/dirty-tricks.jpg');
+}
+
+#video-1 p {
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .25s ease-in-out;
+}
+
+#video-1 p:hover {
+	transform: scale(1.1);
+} 
+
+section {
+	background: #000;
+	padding: 50px;
+	margin-bottom: 100px;
+}
+
+iframe {
+	margin: 0 auto;
+	display: block;
+}
+
+.modal-header {
+	text-align: center;
+}
+
+#video-page {
+	margin-bottom: 100px;
+}
+
+#video-1 {
+	max-height: 279px;
+}
+/* End of Video Section */
+
+/*Contact Section*/
+
+#contact-page {
+	background-image: url("../images/Mountain2.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #fff;
+	color: white;
+	padding:100px;
+	padding-top: 50px;
+	color: #fff;
+}
+
+#contact-page .heading {
+	color: #fff;
+	margin-left: 0px;
+	padding-bottom: 0px;
+}
+
+#contact-page #contacts p {
+	font-size: 1em;
+	text-align: center;
+	color: #fff;
+}
+
+#contact-page #contacts h2 {
+	border-bottom: 0px;
+	color: #fff;
+	text-align: center;
+	width: 60%;
+}
+
+#contact-page h1 {
+	font-size: 4.5em;
+	text-align: center;
+	margin-top: 100px;
+	color: #fff;
+}
+
+#contact-page .find-me {
+	margin-top: 50px;
+	text-align: center;
+	color: #fff;
+}
+
+#contact-page .social-media {
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.contacts h2 {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#contacts {
+	margin-top: 50px;
+}
+
+.btn-default {
+color: #fff;
+background-color: transparent;
+border-color: black;
+border-radius: 0;
+width: 121px;
+padding: 3px;
+border: 2px solid;
+min-width: 80px;
+margin-top: 10px;
+margin-right: 7px;
+text-transform: uppercase;
+font-family: 'Lato', sans-serif;
+transition: all .25s ease-in-out;
+}
+
+.btn-default:hover {
+	color: #000;
+	border-color: #fff;
+	background-color: #fff;
+}
+
+/* End of Contact Section */
+
+/*Contact Form Section*/
+
+#contact-form {
+	/*background-image: url("../img/hole2.jpg");*/
+	background-repeat: no-repeat;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	min-height: 360px;
+	width: 60%;
+}
+
+#contact-form h1 {
+	font-size: 4em;
+	color: #fff;
+	margin-top: 0px;
+}
+
+.form-control {
+	width: 100%;
+	margin-right: 30px;
+	min-width: 200px;
+	border-color: #000;
+}
+
+.form-group {
+	display: inline-block;
+}
+
+#visible-comment {
+	background-color: #fff;
+	margin-top: 10px;
+}
+
+.message-label {
+	width: 100%;
+	height: 21px;
+}
+
+#char-count {
+	display: inline-block;
+	max-width: 50px;
+	margin: 0px;
+	float: right;
+	font-size: 1.1em;
+}
+
+.comment-box {
+	margin-left: 15px;
+	min-width: 200px;
+	border-radius: 4px;
+}
+
+#text-area {
+	margin-right: 15px;
+}
+
+label {
+	margin-top: 20px;
+}
+
+.message-label {
+	margin-top: 0px;
+}
+/* End of Contact Form Section */
+
+/* Gigs Section */
+
+#gig-page .map {
+	width: cover;
+	height: 300px;
+	margin: 0px auto;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#gig-page .glyphicon {
+	margin-right: 10px;
+}
+
+#gig-page iframe {
+	padding: 0px;
+}
+/* End of Gigs Section */
+
+
+/*FAQ Section*/
+
+#faq-page .heading {
+	padding-bottom: 10px;
+}
+	/* Accordeon */
+.panel-group {
+	margin: 0 auto;
+	width: 70%;
+	margin-bottom: 100px;
+}
+
+.panel-group span {
+	font-size: 1.7em;
+	padding-right: 10px;
+}
+
+.panel-group a {
+	text-decoration: none;
+}
+
+.panel-group a:hover {
+	text-decoration: none;
+}
+
+.panel-default > .panel-heading {
+	color: #fff;
+	background-color: #000;
+}
+
+.panel-body {
+	border: 1px solid #000;
+}
+
+	/* End of Accordeon */
+
+	/* Table */
+
+.discography {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.services {
+	margin: 0 auto;
+	width: 70%;
+	text-align: left;
+	border: 1px;
+	margin-bottom: 100px;
+}
+
+table, th, {
+   border: 1px solid black;
+}
+
+th {
+	text-align: left;
+	font-size: 1.3em;
+	padding-left: 10px;
+}
+
+td {
+	padding-left: 10px;
+}
+
+tbody {
+	border: 1px solid black;
+}
+
+#middle-element {
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+}
+
+.my-row {
+	text-align: left;
+	border-left: 1px;
+	border-right: 1px;
+}
+
+	/* End of Table */
+
+/* End of FAQ Section */
+
+/* Footer */
+
+.footer-box {
+	background-color:#000;
+	height: 60px;
+}
+
+.copyright {
+	background-color: #000;
+	margin-left: 10%;
+	padding-top: 22px;
+	position: inline-block;
+}
+
+#soundcloud {
+	float: right;
+	padding-right: 10px;
+}
+
+#bandcamp {
+	float: right;
+	padding-right: 10px;
+}
+
+#facebook {
+	position: relative;
+	top: -4px;
+	float: right;
+	padding-right: 10px;
+}
+
+#youtube {
+	position: relative;
+	top: -1px;
+	float: right;
+	float: right;
+}
+
+#twitter {
+	position: relative;
+	top: -4px;
+	height: 25px;
+	width: 25px;
+	margin-right: 10%;
+	float: right;
+	padding-right: 10px;
+}
+
+/* End of Footer */
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-family: 'Abel', sans-serif;
+}
+
+a {
+	font-family: 'Abel', sans-serif;
+}
+
+label {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+}
+
+.panel-body {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.3em;
+}
+
+.panel-title a {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+}
+
+.panel-title span {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+}
+
+.discography {
+	font-family: 'Lato', sans-serif;
+	font-size: 5em;
+}
+
+th {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+}
+
+td {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.3em;
+}
+
+.copyright {
+	font-family: 'Abel', sans-serif;
+	font-size: 1em;
+	color: #fff;
+}
+
+.tweet {
+	font-family: 'Abel', sans-serif;
+	font-size: 1em;
+	color: #fff;
+}
+
+.form-control {
+	font-family: 'Abel', sans-serif;
+}
+
+#message {
+	font-family: 'Abel', sans-serif;
+}
+
+.gig-details {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.3em;
+}
+
+.gig-details .glyphicon {
+	font-size: 1.2em;
+}
+
+/* End of Typography */
+
+/* Media Queries */
+
+@media all and (max-width: 700px) {
+		#contact-page {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.gig-details {
+			font-size: 1.3em;
+			padding-left: 0px;
+		}
+
+		.gig-details .glyphicon {
+			font-size: 1em;
+		}
+}

@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 	$(".image").mouseenter( function(){
 		console.log(this);
-		$(this).html("<p class='info'><span class='proj-title'>Year: </span>" + myAlbums[this.id].year + "<br>" + "<br>" + myAlbums[this.id].title + "</p>");
+		$(this).html("<p class='info'><span class='proj-title'></span>" + myAlbums[this.id].year + "<br>" + "<br>" + myAlbums[this.id].title + "</p>");
 	}).mouseleave( function() {
 		$("p.info").html("");
 	});

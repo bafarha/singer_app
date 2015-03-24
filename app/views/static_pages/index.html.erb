@@ -1,1 +1,588 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blake Farha</title>
+<!--[if lt IE 9]>
+	<script src="dist/html5shwiv.js"></script>
+	<![endif]-->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+ 
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKmjlAQW0yxRKWqsZ2S5PajtB-ao_DX4k"></script>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
+
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+
+<script>
+  $(function() {
+    $("#eps").tooltip();
+  });
+</script>
+
+<script>
+  $(function() {
+    $("#video-button").tooltip();
+  });
+</script>
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<link href="app/assets/stylesheets/my_styles.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Abel|Lato' rel='stylesheet' type='text/css'>
+
+<script src="js/scripts.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+<nav>
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" 
+         data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--<div class="blakefarha">
+          <p><a href="#">Blake Farha</a></p>
+        </div>-->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home-page">home</a></li>
+            <li><a href="#about-page">about</a></li>
+            <li><a href="#music-page">music</a></li>
+            <li><a href="#video-page">videos</a></li>
+            <li><a href="#contact-page">contact</a></li>
+            <li><a href="#gig-page">gigs</a></li>
+            <li><a href="#faq-page">faq</a></li>
+          </ul>
+        </div> 
+      </div>
+    </div> <!--end nav container-->
+  </div> <!--navbar ends here-->
+</nav>
+
+    <!--Carousel-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="http://i60.tinypic.com/b9j7up.jpg" alt="my favorite book">
+          <div class="carousel-caption" id="book">
+            <h3>My Favorite Thing to Read</h3>
+            <p>I've read it about 19 times, and in English, Spanish, French, and Danish.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://i61.tinypic.com/2r38u3p.jpg" alt="my favorite mode of transport">
+          <div class="carousel-caption" id="bike">
+            <h3>My Favorite Mode of Transport</h3>
+            <p>Beware of annoyed motorists and the odd flat tire mid-route.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://i60.tinypic.com/1zchnis.jpg" alt="my favorite place to be">
+          <div class="carousel-caption" id="road">
+            <h3>My Favorite Place to Be</h3>
+            <p>I start planning the next trip upon arrival.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!--<div class="image_container"></div>-->
+ 
+  <div class="container" id="home-page">
+    <div class="image-container">
+      <img src="http://i60.tinypic.com/v6lykw.jpg" alt="photo of me" class="img-responsive">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h1>Blake Farha. Sad Music Maker.</h1>
+          <p>My guitar and I indulge our emotions through the medium of sappy, acoustic folk songs rife with introspection, questions of self worth, and tales of a broken heart.  This page is about those songs, and the guy who writes them.</p>
+        </div>
+      </div>
+    </div>
+    <div class="guitar">
+      <img src="http://i59.tinypic.com/d3yuq.jpg" alt="picture of my guitar" class="img-responsive">
+    </div>
+  </div>
+
+<!--About-->
+<div class='container' id="about-page">
+  <div class="row">
+    <div class="heading" id="albums">
+      <h1>The Man Behind the Guitar</h1>
+    </div>
+    <div class="smile">
+      <img src="http://i61.tinypic.com/ezlsvr.jpg" alt="picture of me and a ball" class="img-responsive">
+    </div>
+    <div class="contact_body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <h2>History</h2>
+            <p>I've been playing guitar and writing music for over 15 years. After earning a degree in Economics, I hit the road and spent the next several years traveling in search of inspiration for my tunes, and somehow wound up in Berlin, Germany.</p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <h2>Music</h2>
+            <p>I've written lots of songs about heartache, growing pains, self doubt, and the inadequacies of the universe, all in an effort to connect more deeply to myself and the world around me.</p>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <h2>Current</h2>
+            <p>After recording <a href="#music-page" title="Hear my music!" id="eps">4 EPs</a>, I'm now working on my first full length album.If I don't have my guitar in my hands, I'm usually dancing, cooking, or wandering around wondering what I'm doing with my life.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end of About-->
+
+  <!--Music-->
+<div class="container" id="music-page">
+  <div class="row">
+    <div class="heading" id='albums'>
+      <h1>Music</h1>
+    </div>
+  </div>
+  <!--<div class="container">
+    <div class="row" id="album-art">  
+      <div class="col-md-3 col-s-6 col-xs-6" id='things-i-left-behind'>
+        <h2>2014</h2>
+        <a href="http://blakefarha.bandcamp.com/album/things-i-left-behind-ep"><p></p></a>
+        <h4><a href="http://blakefarha.bandcamp.com/album/things-i-left-behind-ep">Things I Left Behind</a></h4>
+      </div>
+      <div class="col-md-3 col-s-6 col-xs-6" id="the-uphill-climb">
+        <h2>2013</h2>
+        <a href="http://blakefarha.bandcamp.com/album/the-uphill-climb-ep"><p></p></a>
+        <a href="http://blakefarha.bandcamp.com/album/the-uphill-climb-ep"><h4>The Uphill Climb</h4></a>
+      </div>  
+      <div class="col-md-3 col-s-6 col-xs-6" id="korean-fruit">
+        <h2>2011</h2>
+        <a href="http://blakefarha.bandcamp.com/album/korean-fruit"><p></p></a>
+        <a href="http://blakefarha.bandcamp.com/album/korean-fruit"><h4>Korean Fruit</h4></a>
+      </div>
+      <div class="col-md-3 col-s-6 col-xs-6" id="just-a-few-tunes">
+        <h2>2009</h2>
+        <a href="http://blakefarha.bandcamp.com/album/just-a-few-tunes"><p></p></a>
+        <a href="http://blakefarha.bandcamp.com/album/just-a-few-tunes"><h4>Just a Few Tunes</h4></a>
+      </div>
+    </div>-->
+    <div class="container">
+      <div class="row">
+        <a class="col-md-3 col-sm-6 col-xs-12" href="http://blakefarha.bandcamp.com/album/things-i-left-behind-ep"><div class="image" id="0"></div></a>
+        <a class="col-md-3 col-sm-6 col-xs-12" href="http://blakefarha.bandcamp.com/album/the-uphill-climb-ep"><div class="image" id="1"></div></a>
+        <a class="col-md-3 col-sm-6 col-xs-12" href="http://blakefarha.bandcamp.com/album/korean-fruit"><div class="image" id="2"></div></a>
+        <a class="col-md-3 col-sm-6 col-xs-12" href="http://blakefarha.bandcamp.com/album/just-a-few-tunes"><div class="image" id="3"></div></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--end of Music Section-->
+
+<!--Videos Section-->
+
+<div class="container" id="video-page">
+  <div class="row">
+    <div class="heading" id='albums'>
+      <h1>Videos</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="album-art">  
+      <div class="ghosting col-md-3 col-sm-6 col-xs-12" id='video-1'>
+        <a href="http://blakefarha.bandcamp.com/album/things-i-left-behind-ep" data-toggle="modal" data-target=".bs-example-modal-sm-ghosting"><p></p></a>
+        <h4>Ghosting by Mother Mother</h4>
+      </div>
+      <div class="video blackbird col-md-3 col-sm-6 col-xs-12" id='video-1'>
+        <a href="http://blakefarha.bandcamp.com/album/things-i-left-behind-ep" data-toggle="modal" data-target=".bs-example-modal-sm-blackbird"><p></p></a>
+        <h4>Blackbird by The Beatles</h4>
+      </div>
+        <div class="video skinny-love col-md-3 col-sm-6 col-xs-12" id='video-1'>
+        <a href="http://blakefarha.bandcamp.com/album/things-i-left-behind-ep" data-toggle="modal" data-target=".bs-example-modal-sm-skinny-love"><p></p></a>
+        <h4>Skinny Love by Bon Iver</h4>
+      </div>
+        <div class="video dirty-tricks col-md-3 col-sm-6 col-xs-12" id='video-1'>
+        <a href="http://blakefarha.bandcamp.com/album/things-i-left-behind-ep" data-toggle="modal" data-target=".bs-example-modal-sm-dirty-tricks"><p></p></a>
+        <h4>Dirty Tricks by Blake Farha</h4>
+      </div>
+    </div>
+       <!--<button class="btn btn-default" data-toggle="modal" data-toggle="tool-tip" data-target=".bs-example-modal-sm" title="Watch me play!" id="video-button">Video</button>-->
+       <div class="modal fade bs-example-modal-sm-ghosting" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">Cover of <strong>"Ghosting"</strong> by <strong>Mother Mother</strong></h2>
+              </div>
+              <div class="modal-body">
+                <section class="youtube_box">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/1sKRhmN8dzo" frameborder="0" allowfullscreen></iframe>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="modal fade bs-example-modal-sm-blackbird" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">Cover of <strong>"Blackbird"</strong> by <strong>The Beatles</strong></h2>
+              </div>
+              <div class="modal-body">
+                <section class="youtube_box">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/QkA0XzGjBOo" frameborder="0" allowfullscreen></iframe>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="modal fade bs-example-modal-sm-skinny-love" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel">Cover of <strong>"Skinny Love"</strong> by <strong>Bon Iver</strong></h2>
+              </div>
+              <div class="modal-body">
+                <section class="youtube_box">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/r_d2kZEk7vo" frameborder="0" allowfullscreen></iframe>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade bs-example-modal-sm-dirty-tricks" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2 class="modal-title" id="myModalLabel"><strong>"Dirty Tricks"</strong> by <strong>Blake Farha</strong></h2>
+              </div>
+              <div class="modal-body">
+                <section class="youtube_box">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/dwWqXE_UGFQ" frameborder="0" allowfullscreen></iframe>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<!-- video embedded directly into webpage
+<section class="youtube_box">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1sKRhmN8dzo" frameborder="0" allowfullscreen></iframe>
+</section>-->
+
+<!--End of Videos Section-->
+
+<!--Contact-->
+<div class="container" id="contact-page">
+<div class="row">
+  <div class="heading col-md-7 col-sm-7 col-xs-12">
+    <h1>Don't be a stranger!</h1>
+    <p>I'm not a tricky guy to hunt down, and I always love to hear from my adoring public.  So, if you've got a question, a comment, or a really good joke, feel free to get in touch.</p>
+  </div>
+  <div id="contact-form col-md-7 col-sm-7 col-xs-12">
+    <div class="col-md-7 col-sm-7 col-xs-12">
+      <form action="/send an email">
+        <div class="row">
+          <div class="name-div col-md-6 col-sm-12 col-xs-12">
+            <label for="Name">Name *</label>
+            <input class="form-control" type="text" id="Name" placeholder="What's your name, friend?" required="required" title="So I know what to call you!">
+          </div>
+          <div class="email-div col-md-6 col-sm-12 col-xs-12">
+            <label for="Email">Email *</label>
+            <input class="form-control" type="email" id="Email" placeholder="What's your Email?" required="required" title="So I can get back to you!">
+          </div>
+        </div>
+        <br>
+        <label for="message" class="message-label">Message (max 300 characters) *
+          <p id="char-count"></p>
+        </label><br>
+        <div class="row" id="text-area">
+          <textarea class="comment-box col-md-12 col-sm-12 col-xs-12" style="resize:none" rows="5" id="message" placeholder="What's on your mind?" required="required" title="So I know how I can help you!" maxlength=300></textarea>
+        </div><br>
+        <button type="Submit" class="btn btn-default" id="button">Submit</button>
+      </form>
+      <p id="visible-comment"></p>
+    </div>
+  </div>
+  <div class="contacts col-md-7 col-sm-7 col-xs-12">
+    <div class="col-md-4 col-sm-4 col-xs-4" id="contacts">
+      <h2><span class="glyphicon glyphicon-envelope"></span></h2>
+      <p>blake@<br>blakefarha.com</p>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4" id="contacts">
+      <h2><span class="glyphicon glyphicon-phone-alt"></span></h2>
+      <p>yeah, right...</p>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-4" id="contacts">
+      <h2><span class="glyphicon glyphicon-globe"></span></h2>
+      <p>Berlin,<br>Germany</p>
+    </div>
+  </div>
+    <div class="col-md-7 col-sm-7 col-xs-12 find-me">
+      <p>You can also find me across the web.</p>
+    </div>
+    <div class="col-md-7 col-sm-7 col-xs-12 social-media">
+      <a class="btn btn-default" href="https://facebook.com/blakefarha" role="button">facebook</a>
+      <a class="btn btn-default" href="https://youtube.com/blakefarha" role="button">youtube</a>
+      <a class="btn btn-default" href="https://blakefarha.bandcamp.com" role="button">bandcamp</a>
+    </div>
+  </div>
+</div>
+<!--Contact-->
+
+<!--Contact Form
+<div class="container" id="contact-form">
+  <div class="col-md-5 col-xs-12">
+  <h1>Drop Me a Line!</h1>
+  </div>
+  <div class="col-md-7 col-xs-12">
+    <form action="/send an email">
+      <div class="row">
+        <div class="name-div col-md-6 col-sm-6 col-xs-6">
+          <label for="Name">Name *</label>
+          <input class="form-control" type="text" id="Name" placeholder="What's your name, friend?" required="required" title="So I know what to call you!">
+        </div>
+        <div class="email-div col-md-6 col-sm-6 col-xs-6">
+          <label for="Email">Email *</label>
+          <input class="form-control" type="email" id="Email" placeholder="What's your Email?" required="required" title="So I can get back to you!">
+        </div>
+      </div>
+      </br>
+      <label for="message" class="message-label">Message (max 300 characters) *
+        <p id="char-count"></p>
+      </label></br>
+      <div class="row" id="text-area">
+        <textarea class="comment-box col-md-12 col-sm-12 col-xs-12" style="resize:none" rows="5" id="message" placeholder="What's on your mind?" required="required" title="So I know how I can help you!" maxlength=300></textarea>
+      </div></br>
+      <button type="Submit" class="btn btn-default" id="button">Submit</button>
+    </form>
+    <p id="visible-comment"></p>
+  </div>
+</div>
+<!--End Contact Form-->
+
+<!-- Gigs Section -->
+<div class="container" id="gig-page">
+  <div class="row">
+    <div class="heading" id="gigs">
+      <h1>Gigs</h1>
+      <p>Would you like to see yours truly playing live?  Come check me out at any of my next shows!</p>
+    </div>
+    <div class="map col-md-6 col-sm-6 col-xs-12" id="map-canvas" style="height: 300px; width: cover">
+    </div>  
+    <!--<div class="map col-md-6 col-sm-6 col-xs-12">
+      <iframe class="col-md-12 col-sm-12 col-xs-12" width="500" height="296" frameborder="4" style="border:2px solid black" src="https://www.google.com/maps/embed/v1/place?q=Gr%C3%BCnberger%20Stra%C3%9Fe%2084%2C%2010245%2C%20Berlin%2C%20Germany&key=AIzaSyAs-4LOsd1txSprTQu2-Ymeqzzk7tqNR10"></iframe></div>-->
+    
+    <div class="gig-details col-md-6 col-sm-6 col-xs-12">
+      <div class="date col-md-12 col-sm-12 col-xs-12">
+        <span class="glyphicon glyphicon-calendar"></span>Saturday, March 7th, 2015
+      </div>
+      <div class="venue col-md-12 col-sm-12 col-xs-12">
+        <span class="glyphicon glyphicon-map-marker"></span>Woodstocks Bar
+      </div>
+      <div class="address col-md-12 col-sm-12 col-xs-12">
+        <span class="glyphicon glyphicon-globe"></span>Grünberger Straße 84, 10245 Berlin
+      </div>
+      <div class="venue-link col-md-12 col-sm-12 col-xs-12">
+        <span class="glyphicon glyphicon-link"></span><a href="https://www.facebook.com/woodstocks.bar.berlin">facebook.com/woodstocks.bar.berlin</a>
+      </div>
+      <div class="time col-md-12 col-sm-12 col-xs-12">
+        <span class="glyphicon glyphicon-time"></span>10:00 PM - 11:30 PM
+      </div>
+      <div class="entry col-md-12 col-sm-12 col-xs-12">
+        <span class="glyphicon glyphicon-usd"></span>Free!
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!-- End of Gigs Section -->
+
+<!--FAQ-->
+<div class="container" id="faq-page">
+  <div class='row heading questions'>
+        <h1>Frequently Asked Questions</h1>
+  </div>
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            <span class="glyphicon glyphicon-plus"></span> How long have you been playing?
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+          <div class="panel-body">
+            I've been playing and writing music since I was 13.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            <span class="glyphicon glyphicon-plus"></span> Why do you like to play guitar?
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+            Because it looks cool, and because it's a great way to get the attention of others around me in the guise of making art.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+            <span class="glyphicon glyphicon-plus"></span> What's with the sad songs, man?
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+          <div class="panel-body">
+            Well...sad is a relative term.  They make me happy!
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+            <span class="glyphicon glyphicon-plus"></span> What do you do when you aren't playing guitar?
+            </a>
+          </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse">
+          <div class="panel-body">
+            I whittle away the hours wishing I were playing my guitar.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+            <span class="glyphicon glyphicon-plus"></span> Why are you building this website?
+            </a>
+          </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse">
+          <div class="panel-body">
+            In order to ensure that questions one through four have been answered for those dying to know.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="discography">
+      Discography
+    </div>
+    <table class="services">
+      <tr class="my-row">
+        <th>Album</th>
+        <th id="middle-element">Release</th>
+        <th>Tracks</th>
+      </tr>
+      <tr class="my-row">
+        <td>Just a Few Tunes</td>
+        <td id="middle-element">2009</td>
+        <td>9</td>
+      </tr>
+      <tr class="my-row">
+        <td>Korean Fruit</td>
+        <td id="middle-element">2011</td>
+        <td>7</td>
+      </tr>
+      <tr class="my-row">
+        <td>The Uphill Climb</td>
+        <td id="middle-element">2013</td>
+        <td>6</td>
+      </tr>
+      <tr class="my-row">
+        <td>Things I Left Behind</td>
+        <td id="middle-element">2014</td>
+        <td>5</td>
+      </tr>
+      <tr class="my-row">
+        <td>The American Dream</td>
+        <td id="middle-element">TBA</td>
+        <td>11</td>
+      </tr>
+    </table>
+  </div>
+  
+<!--end of FAQ-->
+
+<!--smooth scrolling-->
+
+<script type="text/javascript">
+  var $root = $('html, body');
+    $('.navbar-nav a').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500, function () {
+            window.location.hash = href;
+        });
+        return false;
+    });
+  </script>
+
+<!--end of smooth scrolling-->
+
+</body>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-box">
+    <div class="copyright">
+      &copy Copyright Blake Farha 2015 | All Rights Reserved
+    <a id="twitter" href="https://twitter.com/blakefarha"><img src="http://i57.tinypic.com/2lmta87.png" alt="twitter icon"></a>
+    <a id="facebook" href="https://facebook.com/blakefarha"><img src="http://i57.tinypic.com/11kgwtc.png"></a>
+    <a id="youtube" href="https://youtube.com/blakefarha"><img src="http://i61.tinypic.com/20tmi2u.png"></a>
+    <a id="soundcloud" href="https://soundcloud.com/blakefarha"><img src="http://i62.tinypic.com/s3hxxu.png"></a>
+    <a id="bandcamp" href="https://blakefarha.bandcamp.com"><img src="http://i57.tinypic.com/smylns.png"></a>
+    </div>
+  </div>
+</footer>
+
+<!-- End of Footer -->
+
+</html>

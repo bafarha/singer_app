@@ -51,17 +51,6 @@ class ProductsController < ApplicationController
     end
   end
 
-  end
-
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_product
-      @product = Product.find(params[:id])
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def product_params
-      params.require(:product).permit(:name, :description, :image_url, :color)
-    end
 
   # DELETE /products/1
   # DELETE /products/1.json
@@ -72,4 +61,17 @@ class ProductsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_product
+      @product = Product.find(params[:id])
+    end
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def product_params
+      params.require(:product).permit(:name, :description, :image_url, :color)
+    end
+
 end

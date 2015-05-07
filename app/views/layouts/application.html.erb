@@ -17,10 +17,12 @@
     <%= link_to 'New Product', new_product_path %>
     <%= link_to 'Our Products', products_path %>
     <%= link_to 'Main Page', "/static_pages/index" %>
-    <%= form_tag("/products", method: "get") do %>
+    <div class="search">
+      <%= form_tag("/products", method: "get") do %>
       <%= label_tag(:q, "Search for:") %>
       <%=text_field_tag(:q) %>
       <%= submit_tag("Search") %>
+    </div>
     <% end %>
 	<div class="jumbotron">
 		<h1>Thanks for visiting my merch page</h1>

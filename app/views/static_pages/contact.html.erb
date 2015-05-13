@@ -1,2 +1,25 @@
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+
+<img src="http://static.comicvine.com/uploads/original/7/74477/2940939-mrtintro.jpg" alt="MR.T" class="img-responsive">
+<h1>Send me yo' jibba jabba, sucka!</h1>
+
+<%= flash[:notice] %>
+
+<%= form_tag("/static_pages/thank_you") do %>
+<div class="row">
+	<div class="col-md-4">
+		<div class="form-group">
+			<%= label_tag :name, "Name" %>
+			<%= text_field_tag :name, nil, class: "form-control", placeholder: "Write 'cho Name, sucka." %>
+		</div>
+		<div class="form-group">
+			<%= label_tag :email, "Email Address" %>
+			<%= text_field_tag :email, nil, class: "form-control", placeholder: "Write 'cho Email, sucka." %>
+		</div>
+		<div class="form-group">
+			<%= label_tag :message, "Message" %>
+			<%= text_field_tag :message, nil, class: "form-control", placeholder: "What 'chu need, sucka?" %>
+		</div>
+	</div>
+</div>
+<%= submit_tag "Send" %>
+<% end %>

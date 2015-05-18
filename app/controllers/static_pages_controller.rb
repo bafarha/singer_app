@@ -6,8 +6,6 @@ class StaticPagesController < ApplicationController
 		@products = Product.limit(4)
   end
 
-ActionMailer::Base.mail(:from => 'from@domain.com', :to=> 'to@domain.com', :subject => "Mr. T's awesome contacts", :body => 'I pity da fool.  Seriously.').deliver
-
 def thank_you
 	@name = params[:name]
 	@email = params[:email]

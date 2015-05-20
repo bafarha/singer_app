@@ -24,8 +24,8 @@ a {
     color: #666;
   }
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #0600FF;
+    background-color: #FFF;
   }
 }
 
@@ -33,6 +33,10 @@ div {
   &.field, &.actions {
     margin-bottom: 10px;
   }
+}
+
+label {
+  color: #000;
 }
 
 #notice {

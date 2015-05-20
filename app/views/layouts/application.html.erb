@@ -18,7 +18,7 @@
     <%= link_to 'Our Products', products_path %>
     <%= link_to 'Main Page', "/static_pages/index" %>
     <%= link_to 'Contact', "/static_pages/contact" %>
-    <%= link_to 'Sign Up', "/users/sign_in" %>
+    <%= link_to 'Sign Up', "/sign_up" %>
     <% if user_signed_in? %>
       <li>
         <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>

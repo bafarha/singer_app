@@ -18,6 +18,17 @@
     <%= link_to 'Our Products', products_path %>
     <%= link_to 'Main Page', "/static_pages/index" %>
     <%= link_to 'Contact', "/static_pages/contact" %>
+    <%= link_to 'Sign Up', "/users/sign_in" %>
+    <% if user_signed_in? %>
+      <li>
+        <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+      </li>
+    <% else %>
+      <li>
+        <%= link_to('Login', new_user_session_path) %>
+      </li>
+    <% end %>
+  </div>
     <div class="search">
       <%= form_tag("/products", method: "get") do %>
       <%= label_tag(:q, "Search for:") %>
@@ -29,9 +40,11 @@
 		<h1>Thanks for visiting my merch page</h1>
 		<h2>Get your hands on my albums, tickets to my concerts, as well as great merch like T-shirts and stickers!</h2>
 	</div>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 	<!--<img src="/images/uphill_climb_front_cover.jpg" alt="featureproduct" class="img-responsive">-->
 
 <%= yield %>
-
+      
 </body>
 </html>

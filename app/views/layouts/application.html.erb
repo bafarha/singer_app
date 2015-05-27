@@ -11,31 +11,31 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <link href='http://fonts.googleapis.com/css?family=Abel|Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="nav">
+  <div class="navbar">
+    <ul class="nav navbar-nav">
     <%= link_to 'Home', root_path %>
     <%= link_to 'New Product', new_product_path %>
     <%= link_to 'Our Products', products_path %>
-    <%= link_to 'Main Page', "/static_pages/index" %>
+    <!--<%= link_to 'Main Page', "/static_pages/index" %>-->
     <%= link_to 'Contact', "/static_pages/contact" %>
     <%= link_to 'Sign Up', "/sign_up" %>
     <% if user_signed_in? %>
-      <li>
         <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-      </li>
     <% else %>
-      <li>
         <%= link_to('Login', new_user_session_path) %>
-      </li>
     <% end %>
-  </div>
+    </ul>
     <div class="search">
       <%= form_tag("/products", method: "get") do %>
-      <%= label_tag(:q, "Search for:") %>
+      <%= label_tag(:q, "Search:") %>
       <%=text_field_tag(:q) %>
       <%= submit_tag("Search") %>
     </div>
+  </div>
     <% end %>
 	<div class="jumbotron">
 		<h1>Thanks for visiting my merch page</h1>

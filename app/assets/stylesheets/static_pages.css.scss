@@ -11,6 +11,8 @@
 
 .jumbotron {
 	text-align: center;
+	margin-top: 50px;
+	background-color: #27B3E4;
 }
 
 .uphill_climb_cover {
@@ -20,3 +22,179 @@
 	background-image: url("../images/uphill_climb_front_cover.jpg");
 	background-size: cover;
 }
+
+.carousel-inner img {
+	margin: auto;
+}
+
+/* Navbar Section */
+.container>.navbar-header {
+margin-right: 0;
+margin-left: 0;
+float: right;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+color: #000000;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #fff;
+	background-color: #000;
+	text-decoration: none;
+	transition: all .25s ease-in-out;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+border-color: #101010;
+float: right;
+}
+
+.navbar-toggle {
+	background-color: #000
+}
+
+.navbar {
+background-color: #fff;
+width: 100%;
+padding: 0px;
+position: fixed;
+z-index: 1;
+top: 0px;
+border-bottom: 1px solid;
+border-radius: 0px;
+}
+
+.blakefarha {
+	display: inline;
+}
+
+.navbar ul {
+	float: right;
+	margin-top: 15px;
+	margin-right: 0px;
+	padding-left: 0px;
+	display: inline;
+}
+
+.navbar ul li {
+	display: inline;
+	color: #000;
+}
+
+.navbar p {
+	margin-left: 100px;
+	display: inline;
+}
+
+.navbar a {
+	padding: 12px;
+	color: #000;
+	font-size: 1.5em;
+	margin-left: 10px;
+	display: inline;
+	transition: color .5s;
+	transition: all .25s ease-in-out;
+}
+
+.navbar a {
+	-webkit-transition: color 600ms;
+}
+
+.navbar a:hover {
+	color: #fff;
+	background-color: #000;
+	text-decoration: none;
+	transition: all .25s ease-in-out;
+}
+
+.navbar ul li a {
+	color: #000;
+	padding: 15px;
+	font-size: 1.5em;
+	margin-left: 10px;
+}
+
+.buffer {
+	height: 51px;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	font-family: 'Abel', sans-serif;
+}
+
+a {
+	font-family: 'Abel', sans-serif;
+}
+
+label {
+	font-family: 'Lato', sans-serif;
+	color: #000;
+}
+
+.panel-body {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.3em;
+}
+
+.panel-title a {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+}
+
+.panel-title span {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+}
+
+.discography {
+	font-family: 'Lato', sans-serif;
+	font-size: 5em;
+}
+
+th {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+}
+
+td {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.3em;
+}
+
+.copyright {
+	font-family: 'Abel', sans-serif;
+	font-size: 1em;
+	color: #fff;
+}
+
+.tweet {
+	font-family: 'Abel', sans-serif;
+	font-size: 1em;
+	color: #fff;
+}
+
+.form-control {
+	font-family: 'Abel', sans-serif;
+}
+
+#message {
+	font-family: 'Abel', sans-serif;
+}
+
+.gig-details {
+	font-family: 'Abel', sans-serif;
+	font-size: 1.3em;
+}
+
+.gig-details .glyphicon {
+	font-size: 1.2em;
+}
+
+/* End of Typography */

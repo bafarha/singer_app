@@ -56,8 +56,6 @@ class ProductsController < ApplicationController
     end
   end
 
-before_filter :authenticate_user!
-
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy

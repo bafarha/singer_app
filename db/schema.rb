@@ -13,15 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150619215957) do
 
-  create_table "comments", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "product_id"
-    t.string   "body"
-    t.integer  "rating"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "orders", force: :cascade do |t|
     t.string  "user_id"
     t.integer "product_id"

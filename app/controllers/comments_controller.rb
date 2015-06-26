@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
 		@product = Product.find(params[:product_id])
 		@comment = @product.comments.new(comment_params)
 		@comment.user = current_user
-		@comments.save
+		@comment.save
 		redirect_to products_path(@product)
 	end
 

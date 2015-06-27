@@ -39,7 +39,6 @@ ActiveRecord::Schema.define(version: 20150626005729) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.string   "year"
-    t.string   "track_listing"
   end
 
   create_table "users", force: :cascade do |t|

@@ -4,6 +4,9 @@ gem 'devise'
 
 gem 'cancancan'
 
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 
@@ -51,6 +54,3 @@ group :production do
 	gem 'rails_12factor'
 	gem 'pg'
 end
-
-## Gemfile for Rails 3+, Sinatra, and Merb
-gem 'will_paginate', '~> 3.0.6'

@@ -63,6 +63,7 @@ z-index: 1;
 top: 0px;
 border-bottom: 1px solid;
 border-radius: 0px;
+margin-left: -15px;
 }
 
 .blakefarha {
@@ -121,6 +122,15 @@ border-radius: 0px;
 
 /* End NavBar Section */
 
+
+/* album_details */
+
+.album_details h2 {
+	margin-top: 0px;
+}
+
+/* End album_details section */
+
 /* Buttons */
 
 .btn-default {
@@ -145,6 +155,21 @@ transition: all .25s ease-in-out;
 	background-color: #fff;
 }
 
+.row {
+	margin-left: 0px;
+}
+
+.jumbotron {
+	margin: -15px;
+}
+
+.footer-box {
+	margin: -15px;
+}
+
+body {
+	margin-left: 15px;
+}
 /* End Buttons */
 
 .row {

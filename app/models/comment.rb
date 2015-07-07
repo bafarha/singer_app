@@ -4,9 +4,10 @@ class Comment < ActiveRecord::Base
   validates :body, presence: true
   validates :user, presence: true
   validates :product, presence: true
-  validates :rating, numerically: { only_integer: true }
+  validates :rating, numericality: { only_integer: true }
 
   def create
+  	@comments = Comment.paginate(:page => params[:page])
   	@product = Product.find(params[:product_id])
   	@comment = @product.comments.new(comment_params)
   	@comment.user = current_user
@@ -20,5 +21,5 @@ class Comment < ActiveRecord::Base
   		end
   	end
   end
-  
+
 end

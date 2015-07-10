@@ -6,5 +6,9 @@ default from: "from@example.com"
   	mail(:from => email, 
 	  		:to => 'bafarha@gmail.com', 
 	  		:subject => "  #{name} sent you a message, sucka'!")
-  end
+  	end
+
+  	def registration_confirmation(user)
+  		mail(:to => user.email, :subject => "Thanks for Registering")
+  	end
 end

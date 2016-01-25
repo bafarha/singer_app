@@ -14,4 +14,25 @@ describe Product do
 			expect(@product.average_rating).to eq 3
 		end
 	end
+
+	context "when the product has a name" do
+		before do
+			@product = Product.create!(name: "3rd album")
+		end
+
+		it "it is valid" do
+			expect(@product).to be_valid
+		end
+
+	end
+
+	context "when the product has no name" do
+		before do
+			@product = Product.build(description: "Great!")
+		end
+
+		it "it is not valid" do
+			expect(@product).not_to be_valid
+		end
+	end
 end

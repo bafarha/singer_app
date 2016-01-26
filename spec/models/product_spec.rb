@@ -3,8 +3,10 @@ require 'rails_helper'
 describe Product do
 	context "when the product has comments" do
 		before do
-			@product = Product.create!(name: "new album")
-			@user = User.create!(first_name: "John", last_name: "Smith", email: "john@smith.com", password: "password")
+			#@product = Product.create!(name: "new album")
+			@product = FactoryGirl.create(:product)
+			#@user = User.create!(first_name: "John", last_name: "Smith", email: "john@smith.com", password: "password")
+			@user = FactoryGirl.create(:user)
 			@product.comments.create!(rating: 1, user: @user, body: "not the best album")
 			@product.comments.create!(rating: 3, user: @user, body: "better than the last album")
 			@product.comments.create!(rating: 5, user: @user, body: "best album to date!")
@@ -17,7 +19,7 @@ describe Product do
 
 	context "when the product has a name" do
 		before do
-			@product = Product.create!(name: "3rd album")
+			@product = FactoryGirl.build(:product, name: "3rd album")
 		end
 
 		it "it is valid" do
@@ -28,7 +30,7 @@ describe Product do
 
 	context "when the product has no name" do
 		before do
-			@product = Product.new(description: "Great!")
+			@product = FactoryGirl.build(:product, name: "", description: "Great!")
 		end
 
 		it "it is not valid" do

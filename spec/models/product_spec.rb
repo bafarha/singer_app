@@ -28,7 +28,7 @@ describe Product do
 
 	context "when the product has no name" do
 		before do
-			@product = Product.build(description: "Great!")
+			@product = Product.new(description: "Great!")
 		end
 
 		it "it is not valid" do

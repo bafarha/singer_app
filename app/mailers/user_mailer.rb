@@ -6,5 +6,11 @@ default from: "from@example.com"
   	mail(:from => email, 
 	  		:to => 'bafarha@gmail.com', 
 	  		:subject => "  #{name} sent you a message, sucka'!")
-  end
+  	end
+
+  	def welcome(user)
+  		@appname = "Blake Farha"
+  		mail( :to => user.email,
+        :subject => "Welcome to #{@appname}!")
+	end
 end

@@ -9,7 +9,7 @@ class ProductsController < ApplicationController
         search_term = params[:q]
         @products = Product.where("name ilike ?", "%#{search_term}%")
       else
-        @products = Product.all?
+        @products = Product.all
       end
     else
       if params[:q]

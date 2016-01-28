@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'devise'
-gem 'stripe'
 gem 'cancancan'
-
+gem 'stripe'
 ## Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate'
 

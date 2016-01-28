@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'devise'
-
+gem 'stripe'
 gem 'cancancan'
 
 ## Gemfile for Rails 3+, Sinatra, and Merb

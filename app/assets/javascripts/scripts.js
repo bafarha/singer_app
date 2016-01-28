@@ -49,22 +49,22 @@ $(document).ready(function(){
 	//		center: new google.maps.LatLng(52.51094,13.461327,16),
 	//		zoom: 13
 	//	};
-	
+	//
 	//	var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-	
+	//
 	//	var marker = new google.maps.Marker({
 	//		position: map.getCenter(),
 	//		map: map,
 	//		title: 'Clcik to zoom'
 	//	});
-
+	//
 	//	google.maps.event.addListener(marker, 'click', function() {
 	//		map.setZoom(17);
 	//		map.setCenter(marker.getPosition());
 	//	});
-
+	//
 	//};
-
+	//
 	//google.maps.event.addDomListener(window, 'load', initialize);
-
+	//
 //});

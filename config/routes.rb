@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   get 'orders/videos'
 
+  post 'static_pages/payments'
+
   resources :orders, only: [:index, :show, :new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

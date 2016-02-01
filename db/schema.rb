@@ -36,10 +36,10 @@ ActiveRecord::Schema.define(version: 20160201112557) do
     t.string   "name"
     t.text     "description"
     t.string   "image_url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
     t.string   "year"
-    t.decimal  "price"
+    t.decimal  "price",       precision: 5, scale: 2
   end
 
   create_table "users", force: :cascade do |t|

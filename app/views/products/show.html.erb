@@ -12,15 +12,15 @@
   					<%= @product.name %>
 				</h2>
 				<h4>
-					<%= @product.year %>
+  					<%= @product.description %>
 				</h4>
+				<h5>
+					<%= @product.year %>
+				</h5>
 				<h4>
 					Price:
 					$<%= @product.price %>
 				</h4>
-				<h5>
-  					<%= @product.description %>
-				</h5>
 				<h5>
 					Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div>
 				</h5>

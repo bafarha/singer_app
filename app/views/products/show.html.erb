@@ -18,7 +18,7 @@
 					<%= @product.year %>
 				</h5>
 				<h4>
-					$<%= @product.price %>
+				    <%= number_to_currency(@product.price) %>
 				</h4>
 				<h5>
 					Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div>

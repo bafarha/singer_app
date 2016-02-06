@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160201112557) do
+ActiveRecord::Schema.define(version: 20160206163625) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "user_id"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20160201112557) do
   create_table "orders", force: :cascade do |t|
     t.string  "user_id"
     t.integer "product_id"
+    t.integer "total"
   end
 
   add_index "orders", ["product_id"], name: "index_orders_on_product_id"
@@ -36,10 +37,10 @@ ActiveRecord::Schema.define(version: 20160201112557) do
     t.string   "name"
     t.text     "description"
     t.string   "image_url"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
     t.string   "year"
-    t.decimal  "price",       precision: 5, scale: 2
+    t.decimal  "price",       precision: 5
   end
 
   create_table "users", force: :cascade do |t|

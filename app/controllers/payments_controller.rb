@@ -16,11 +16,8 @@ class PaymentsController < ApplicationController
     if charge.paid
     	Order.create(user: @user, product: @product, total: 1)
     end
-    
-  	rescue Stripe::CardError => e
+    rescue Stripe::CardError => e
     # The card has been declined
   	end
-  	redirect_to product_path(@product)
 	end
-
 end

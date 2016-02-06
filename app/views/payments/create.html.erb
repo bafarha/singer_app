@@ -1,0 +1,11 @@
+<div class="row">
+	<div class="col-lg-12 col-md-4">
+		<h3>Thanks so much!</h3>
+		<p>You just purchased "<%= @product.name %>."  I hope you enjoy it!</p>
+		<img src ="<%= @product.image_url %>">
+	</div>
+	<div>
+		<h3>If you'd like, you can <%= link_to 'leave a review', product_path(@product) %> or <%= link_to 'check out more stuff', products_path %>!
+		</h3>
+	</div>
+</div>

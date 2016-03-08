@@ -6,7 +6,7 @@ $(document).on('ready page:load', function(){
 		return $(this).attr('data-score');
 		}
 	});
-	/* end of raty */
+/* end of raty */
 
 	/* start of elevateZoom */
 	$('.img-zoom').elevateZoom();

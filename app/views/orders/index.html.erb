@@ -1,6 +1,17 @@
 <input type="text" placeholder="Your name" ng-model="name">
 
 <div ng-controller="OrdersCtrl">
+	<h1>Orders</h1>
+
+	<form class="form-inline" ng-submit="addOrder()">
+		<strong>Add order: </strong>
+
+		<input type="hidden" value="{{orders[orders.length - 1].id + 1 }}" disabled>
+		<input type="number" step="0.01" class="form-control" placeholder = "Total" ng-model="newOrder.total">
+		<input type="number" class="form-control" ng-model="newOrder.product_id">
+		<input type="submit" value="+" class="btn btn-success">
+	</form>
+
 	<table class="table table-hover">
 		<thead>
 			<td>Order ID</td>
@@ -20,6 +31,7 @@
 				<small ng-show="order.id"><br>{{order.user_id}}</small>
 			</td>
 			<td>
+				<button ng-click="deleteOrder(order)" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
 			</td>
 		</tr>
 	</table>

@@ -1,0 +1,26 @@
+<input type="text" placeholder="Your name" ng-model="name">
+
+<div ng-controller="OrdersCtrl">
+	<table class="table table-hover">
+		<thead>
+			<td>Order ID</td>
+			<td>Total</td>
+			<td>Product</td>
+			<td></td>
+		</thead>
+		<tr ng-repeat = "order in orders | orderBy: '-id':reverse">
+			<td>
+				{{order.id}}
+			</td>
+			<td>
+				{{order.total | currency}}
+			</td>
+			<td>
+				{{order.product_id}}
+				<small ng-show="order.id"><br>{{order.user_id}}</small>
+			</td>
+			<td>
+			</td>
+		</tr>
+	</table>
+</div>

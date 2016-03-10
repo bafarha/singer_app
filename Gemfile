@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'devise'
 gem 'cancancan'
 gem 'stripe'
+gem 'angularjs-rails'
 ## Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate'
 

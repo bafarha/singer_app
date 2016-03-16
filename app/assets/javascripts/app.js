@@ -11,14 +11,8 @@ app.factory('models', [function(){
 	return x
 }]);
 
-app.controller('OrdersCtrl', ['$scope', function($scope){
-	$scope.orders = [
-		{id: 1, total: 24, product_id: 1, user_id: 1},
-		{id: 2, total: 78, product_id: 2},
-		{id: 3, total: 3, product_id: 3, user_id: 1},
-		{id: 4, total: 3, product_id: 3, user_id: 1},
-		{id: 5, total: 3, product_id: 3, user_id: 1}
-	]
+app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
+	$scope.orders = models.orders;
 
 	$scope.addOrder = function(){
 		if(!$scope.newOrder.product_id || $scope.newOrder.total === ''){return; }

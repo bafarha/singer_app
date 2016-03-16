@@ -9,7 +9,7 @@ app.factory('models', [function(){
 		orders: []
 	};
 	return x
-}])
+}]);
 
 app.controller('OrdersCtrl', ['$scope', function($scope){
 	$scope.orders = [

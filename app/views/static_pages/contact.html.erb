@@ -1,6 +1,8 @@
-
+<% cache do %>
+<% sleep 2 %>
 <img src="http://static.comicvine.com/uploads/original/7/74477/2940939-mrtintro.jpg" alt="MR.T" class="img-responsive">
-<h1>Send me yo' jibba jabba, sucka!  I'm dyin' to hear what 'cha think!	</h1>
+<h1> Do you have a question? Get in touch!	</h1>
+<% end %>
 
 <%= flash[:notice] %>
 
@@ -9,15 +11,15 @@
 	<div class="col-md-4">
 		<div class="form-group">
 			<%= label_tag :name, "Name" %>
-			<%= text_field_tag :name, nil, class: "form-control", placeholder: "Write 'cho Name, sucka." %>
+			<%= text_field_tag :name, nil, class: "form-control", placeholder: "What is your name?" %>
 		</div>
 		<div class="form-group">
 			<%= label_tag :email, "Email Address" %>
-			<%= text_field_tag :email, nil, class: "form-control", placeholder: "Write 'cho Email, sucka." %>
+			<%= text_field_tag :email, nil, class: "form-control", placeholder: "What is your email address?" %>
 		</div>
 		<div class="form-group">
 			<%= label_tag :message, "Message" %>
-			<%= text_field_tag :message, nil, class: "form-control", placeholder: "What 'chu need, sucka?" %>
+			<%= text_field_tag :message, nil, class: "form-control", placeholder: "How can I help you?" %>
 		</div>
 	</div>
 </div>

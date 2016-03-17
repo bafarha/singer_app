@@ -4,12 +4,12 @@ class OrdersController < ApplicationController
   respond_to :json, :html
 
   def index
-    @orders = Order.all.to_json(:include => [{:product => {:only => :name}}, {:user => {:only => :email}}])
+    @orders = Order.all.to_json(:include => [{:product => {:only => [:name, :price, :image_url]}}, {:user => {:only => :email}}])
     respond_with @orders
   end
 
   def show
-    @order = Order.find(params[:id]).to_json(:include => [{:product => {:only => :name}}, {:user => {:only => :email}}])
+    @order = Order.find(params[:id]).to_json(:include => [{:product => {:only => [:name, :price, :image_url]}}, {:user => {:only => :email}}])
     respond_with @order
   end
 

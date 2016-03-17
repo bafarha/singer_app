@@ -5,6 +5,7 @@ gem 'cancancan'
 gem 'stripe'
 gem 'angularjs-rails'
 gem 'dalli'
+gem 'redis-rails'
 ## Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate'
 

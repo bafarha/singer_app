@@ -7,6 +7,7 @@
   					<%= image_tag(@product.image_url, width: "350", class: "img-zoom", data_zoom_image: @product.image_url) %>
 				</p>
 			</div>
+			<% cache @product do %>
 			<div class="album_details col-md-8 col-xs-12">
 				<h2>
   					<%= @product.name %>
@@ -28,6 +29,7 @@
   					<%= render partial:'shared/stripe_checkout_button' %>
 				<% end %>
 			</div>
+			<% end %>
 		</div>
 	</div>
 </div>

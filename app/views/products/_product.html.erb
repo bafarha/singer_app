@@ -1,3 +1,4 @@
+<% cache product do %>
 <tr>
   <td><%= product.name %></td>
   <td><%= number_to_currency(product.price) %></td>
@@ -8,6 +9,7 @@
   <td><%= link_to 'Edit', edit_product_path(product) %></td>
   <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 </tr>
+<% end %>
 <% logger.debug "name: #{product.name}"%>
 <% logger.debug "price: #{product.price}"%>
 <% logger.debug "description: #{product.description}"%>

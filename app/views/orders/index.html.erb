@@ -34,7 +34,7 @@
 				{{order.total}}
 			</td>
 			<td>
-				{{order.total}} * {{order.product.price | currency}}
+				{{order.total * order.product.price | currency}}
 			</td>
 			<td>
 				<button ng-click="deleteOrder(order)" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>

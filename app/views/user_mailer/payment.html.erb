@@ -5,6 +5,8 @@
 		<img src ="<%= @product.image_url %>">
 	</div>
 	<div>
+		<h3>If you'd like, you can <%= link_to 'leave a review', product_path(@product) %> or <%= link_to 'check out more stuff', products_path %>!
+		</h3>
 		<h3>Cheers!</h3>
 	</div>
 </div>

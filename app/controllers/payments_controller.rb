@@ -15,6 +15,7 @@ class PaymentsController < ApplicationController
     	)
     if charge.paid
     	Order.create(user: @user, product: @product, total: 1)
+      UserMailer.payment(@user, @product).deliver
     end
     rescue Stripe::CardError => e
     # The card has been declined
